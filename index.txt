@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dra. Leila D'Arc | Nutrição Avançada & Ortomolecular</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            luxury: {
+              gold: '#b8986c',
+              goldHover: '#a38358',
+              dark: '#111111',
+              slate: '#1e2229',
+              light: '#fcfbfa'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fcfbfa; color: #111111; overflow-x: hidden; }
+    
+    .hero-bg {
+      background: linear-gradient(rgba(252, 251, 250, 0.92), rgba(252, 251, 250, 0.85)), 
+                  url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover; background-position: center;
+    }
+
+    .glass { backdrop-filter: blur(12px); background: rgba(252, 251, 250, 0.8); }
+    
+    .btn-premium {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(184, 152, 108, 0.25);
+    }
+
+    #mobile-menu { transition: 0.3s ease-in-out; transform-origin: top; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 glass border-b border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+      <div class="font-serif text-2xl tracking-widest text-luxury-dark uppercase font-semibold">
+        Leila D'Arc <span class="text-luxury-gold text-sm block font-sans tracking-widest font-light -mt-1">Nutrição de Elite</span>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-10">
+        <a href="#metodo" class="text-sm font-medium tracking-wide text-stone-600 hover:text-luxury-gold transition">O Conceito</a>
+        <a href="#especialidades" class="text-sm font-medium tracking-wide text-stone-600 hover:text-luxury-gold transition">Especialidades</a>
+        <a href="#sobre" class="text-sm font-medium tracking-wide text-stone-600 hover:text-luxury-gold transition">A Profissional</a>
+        <a href="https://api.whatsapp.com/send/?phone=5577999207528&text&type=phone_number&app_absent=0" target="_blank" class="btn-premium bg-luxury-dark text-white px-7 py-3 rounded-full text-xs font-semibold tracking-widest uppercase hover:bg-luxury-gold transition">
+          Agendar Consulta
+        </a>
+      </nav>
+
+      <button id="menu-toggle" class="lg:hidden text-luxury-dark"><i data-lucide="menu" class="w-7 h-7"></i></button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden absolute top-24 left-0 w-full bg-luxury-light border-b border-stone-200 flex-col p-8 gap-5 lg:hidden shadow-xl">
+      <a href="#metodo" class="mobile-link text-lg font-medium py-1">O Conceito</a>
+      <a href="#especialidades" class="mobile-link text-lg font-medium py-1">Especialidades</a>
+      <a href="#sobre" class="mobile-link text-lg font-medium py-1">A Profissional</a>
+      <a href="https://api.whatsapp.com/send/?phone=5577999207528&text&type=phone_number&app_absent=0" target="_blank" class="bg-luxury-gold text-white py-4 rounded-xl text-center font-bold tracking-wider uppercase text-sm">Agendar Consulta</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-bg min-h-screen flex items-center pt-28">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 items-center gap-12 py-12">
+      <div class="lg:col-span-8">
+        <span class="inline-flex items-center gap-2 bg-stone-900 text-[#dfcbb5] px-5 py-2 rounded-full font-medium text-xs uppercase tracking-widest mb-8 border border-stone-800">
+          <i data-lucide="award" class="w-4 h-4 text-luxury-gold"></i> + de 65 mil vidas transformadas
+        </span>
+        <h1 class="font-serif text-5xl lg:text-7xl leading-[1.15] text-luxury-dark mb-6 font-light">
+          Sua estética e performance esculpidas com <span class="italic text-luxury-gold font-normal">precisão científica.</span>
+        </h1>
+        <p class="text-lg text-stone-600 mb-12 leading-relaxed max-w-2xl font-light">
+          Protocolos de alto padrão que integram a nutrição clínica, esportiva e a ciência ortomolecular. O equilíbrio perfeito para quem busca emagrecimento definitivo, longevidade e máxima definição biológica.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-5">
+          <a href="https://api.whatsapp.com/send/?phone=5577999207528&text&type=phone_number&app_absent=0" target="_blank" class="btn-premium bg-luxury-gold text-white px-10 py-5 rounded-full font-semibold text-center text-sm tracking-widest uppercase shadow-lg shadow-luxury-gold/20 hover:bg-luxury-goldHover">
+            Agendar Minha Consulta Exclusiva
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONCEITO / PROBLEMAS (DOBRAS CORRIGIDAS) -->
+  <section class="py-28 bg-white border-t border-stone-100" id="metodo">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-20">
+        <h2 class="font-serif text-4xl lg:text-5xl font-light text-luxury-dark mb-5">O que afasta você do seu ápice físico?</h2>
+        <p class="text-stone-500 font-light text-lg">Dietas genéricas ignoram a sua individualidade biológica. Tratar o sintoma sem ajustar a base celular impede qualquer resultado duradouro.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-10 rounded-2xl bg-luxury-light border border-stone-200/60 shadow-sm hover:border-luxury-gold/40 transition duration-300">
+          <div class="w-12 h-12 bg-stone-900 text-luxury-gold rounded-xl flex items-center justify-center mb-8 shadow-md"><i data-lucide="activity"></i></div>
+          <h3 class="font-serif text-2xl font-normal mb-4 text-luxury-dark">Desequilíbrio Ortomolecular</h3>
+          <p class="text-stone-600 font-light leading-relaxed text-sm">Cansaço inexplicável, oscilações de humor e metabolismo lento costumam ser sinais diretos de carências de micronutrientes essenciais na célula.</p>
+        </div>
+        <div class="p-10 rounded-2xl bg-luxury-light border border-stone-200/60 shadow-sm hover:border-luxury-gold/40 transition duration-300">
+          <div class="w-12 h-12 bg-stone-900 text-luxury-gold rounded-xl flex items-center justify-center mb-8 shadow-md"><i data-lucide="sparkles"></i></div>
+          <h3 class="font-serif text-2xl font-normal mb-4 text-luxury-dark">Estagnação Estética</h3>
+          <p class="text-stone-600 font-light leading-relaxed text-sm">Treinar intensamente e não alcançar a definição desejada ocorre quando o plano alimentar não está perfeitamente alinhado com a sua modulação hormonal natural.</p>
+        </div>
+        <div class="p-10 rounded-2xl bg-luxury-light border border-stone-200/60 shadow-sm hover:border-luxury-gold/40 transition duration-300">
+          <div class="w-12 h-12 bg-stone-900 text-luxury-gold rounded-xl flex items-center justify-center mb-8 shadow-md"><i data-lucide="shield-alert"></i></div>
+          <h3 class="font-serif text-2xl font-normal mb-4 text-luxury-dark">Inflamação Subclínica</h3>
+          <p class="text-stone-600 font-light leading-relaxed text-sm">Retenção hídrica constante e desconfortos intestinais sabotam a absorção de nutrientes e bloqueiam a queima eficiente de gordura corporal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO ESPECIALIDADES -->
+  <section class="py-28 bg-luxury-light border-t border-b border-stone-200/40" id="especialidades">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-20">
+        <span class="text-xs uppercase font-semibold tracking-widest text-luxury-gold">Sinergia e Ciência</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-light text-luxury-dark mt-2">A Abordagem Integrativa</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/50 text-center">
+          <i data-lucide="shield" class="w-8 h-8 text-luxury-gold mx-auto mb-5"></i>
+          <h3 class="font-serif text-xl font-normal text-luxury-dark mb-2">Clínica</h3>
+          <p class="text-stone-500 text-xs font-light">Tratamento e prevenção de patologias através do reequilíbrio alimentar.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/50 text-center">
+          <i data-lucide="sparkles" class="w-8 h-8 text-luxury-gold mx-auto mb-5"></i>
+          <h3 class="font-serif text-xl font-normal text-luxury-dark mb-2">Estética</h3>
+          <p class="text-stone-500 text-xs font-light">Estratégias focadas na saúde da pele, redução de gordura e tônus.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/50 text-center">
+          <i data-lucide="dumbbell" class="w-8 h-8 text-luxury-gold mx-auto mb-5"></i>
+          <h3 class="font-serif text-xl font-normal text-luxury-dark mb-2">Esportiva</h3>
+          <p class="text-stone-500 text-xs font-light">Otimização de treinos, hipertrofia muscular e energia de elite.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/50 text-center">
+          <i data-lucide="layers" class="w-8 h-8 text-luxury-gold mx-auto mb-5"></i>
+          <h3 class="font-serif text-xl font-normal text-luxury-dark mb-2">Funcional</h3>
+          <p class="text-stone-500 text-xs font-light">Foco na saúde integrativa e no funcionamento perfeito dos órgãos.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/50 text-center">
+          <i data-lucide="dna" class="w-8 h-8 text-luxury-gold mx-auto mb-5"></i>
+          <h3 class="font-serif text-xl font-normal text-luxury-dark mb-2">Ortomolecular</h3>
+          <p class="text-stone-500 text-xs font-light">Restabelecimento do equilíbrio químico celular e combate a radicais livres.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE A EXPERT -->
+  <section class="py-28 bg-white" id="sobre">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16 items-center">
+      <div class="lg:col-span-5 relative">
+        <div class="absolute -inset-4 bg-stone-100 rounded-2xl -z-10"></div>
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1374&auto=format&fit=crop" alt="Leila D'Arc" class="rounded-xl w-full aspect-[4/5] object-cover shadow-xl bg-stone-200">
+      </div>
+      <div class="lg:col-span-7">
+        <span class="text-xs uppercase font-semibold tracking-widest text-luxury-gold block mb-2">A Profissional por trás dos Resultados</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-light mb-8 text-luxury-dark">Leila D'Arc</h2>
+        <div class="space-y-6 text-stone-600 text-base font-light leading-relaxed">
+          <p>Com uma sólida trajetória fundamentada na ciência nutricional de vanguarda, atuo no desenvolvimento de protocolos personalizados de alta sofisticação. Minha metodologia une os pilares das ciências Funcional e Ortomolecular para entregar resultados profundos, seguros e esteticamente impecáveis.</p>
+          <p>Com a chancela de <strong>mais de 65 mil pacientes atendidos</strong> ao longo da carreira, entendo que a verdadeira evolução física exige respeito à individualidade biológica e precisão em cada detalhe metabólico.</p>
+          
+          <div class="grid sm:grid-cols-2 gap-4 pt-6 text-sm text-luxury-dark font-medium">
+            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-luxury-gold w-5 h-5"></i><span>Vitória da Conquista - BA</span></div>
+            <div class="flex items-center gap-3"><i data-lucide="globe" class="text-luxury-gold w-5 h-5"></i><span>Atendimento Presencial e Online</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-28 bg-luxury-dark text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(184,152,108,0.12),transparent_50%)]"></div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <h2 class="font-serif text-4xl lg:text-6xl font-light mb-6">Pronto para vivenciar a sua melhor versão?</h2>
+      <p class="text-stone-400 text-lg lg:text-xl mb-12 font-light max-w-2xl mx-auto leading-relaxed">Una-se ao seleto grupo de pacientes que transformaram sua saúde e atingiram a máxima performance física.</p>
+      <a href="https://api.whatsapp.com/send/?phone=5577999207528&text&type=phone_number&app_absent=0" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-luxury-gold text-white px-12 py-5 rounded-full font-semibold text-sm tracking-widest uppercase hover:bg-luxury-goldHover shadow-xl shadow-luxury-gold/10">
+        <i data-lucide="message-circle" class="w-5 h-5"></i> Agendar Minha Consulta Exclusiva
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 bg-luxury-light border-t border-stone-200/60 text-center text-stone-400 text-xs tracking-wider uppercase">
+    <p>© 2026 Leila D'Arc — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    
+    // Logic for Mobile Menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
